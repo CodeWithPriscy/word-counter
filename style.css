@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#1f2833;
+    height:100vh;
+}
+h1{
+    text-align:center;
+    position: relative;
+    top:7rem;
+    font-family: "Sedan SC", serif;
+    color:#66fcf1;
+    word-spacing: 10px;
+}
+/*#0b0c10;*/
+.wrapper{
+    background-color: #d6d079;
+    height: 52%;
+    width:25%;
+    margin:0 auto;
+    margin-top: 10%;    
+    /*padding:60px;*/
+    overflow:hidden;
+    
+}
+.container{
+text-align: center;
+}
+textarea{
+    margin-top:1.5rem;
+    font-size:14px;
+
+}
+#text{
+    padding: 10px;
+}
+h2{
+    margin-top:2rem;
+}
+.btn{
+    margin-top:1.2rem;
+    
+}
+button{
+    padding:8px;
+    cursor:pointer;
+    background-color:#f8f0d0;
+    color:black;
+    border:none;
+}
+button:hover{
+    background-color:#87f8f0;
+}
+#result{
+    margin-top: 1rem;
+    word-spacing: 5px;
+    font-weight: bold;
+    font-size:1.2rem;
+}

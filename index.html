@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="message">Calculate Words</h1>
+
+    <div class="wrapper">
+        <div class="container">
+        <h2>Type a Sentence</h2>
+
+    <div id="textarea">
+    <textarea id="text" placeholder="Type something..." rows="10" cols="37"></textarea>
+    </div>
+
+        <div class="btn">
+            <button type="button" onclick="wordcalc()">Calculate words</button>
+            <div id="result"></div>
+        </div>
+    </div>
+</div>
+
+    <script>
+        function wordcalc(){
+            let para=document.getElementById("text").value.trim();
+            if(para== '') {
+                document.getElementById("result").innerHTML = `0 words`;
+            }
+            else{
+            let wordsplit=para.split(' ');
+            let wordcount=wordsplit.length;
+            document.getElementById("result").innerHTML = `${wordcount} words`;
+        }
+    }
+    </script>
+</body>
+</html>
